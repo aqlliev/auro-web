@@ -67,7 +67,6 @@ export const otherWork = [
   { id: "dominos", role: "Pizza Maker Assistant", org: "Domino’s Pizza", dates: "Jun – Aug 2025" },
   { id: "bellissimo", role: "Pizza Maker, then Assistant to the Shift Manager", org: "Bellissimo Pizza", dates: "Feb – Jun 2025" },
   { id: "river", role: "Receptionist", org: "River Hotel", dates: "Nov – Dec 2024" },
-  { id: "alisher", role: "Receptionist", org: "Alisher Hotel", dates: "" },
 ] as const;
 
 export const education = [
