@@ -21,7 +21,7 @@ export const site = {
   x: "https://x.com/aqlliev",
   xLabel: "x.com/aqlliev",
   /** Paste the full LinkedIn URL. Empty = not shown. */
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/aqlliev",
   /** Put the PDF in /public and set this to "/cv.pdf". Empty = not shown. */
   cv: "",
   portrait: "/portrait.jpg",
