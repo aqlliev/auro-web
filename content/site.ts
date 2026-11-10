@@ -55,7 +55,7 @@ export const experience = [
     role: "Sales Manager",
     org: "Uzschool",
     place: "Tashkent",
-    dates: "",
+    dates: "Mar – May 2024",
     points: [
       "Sold online English courses, generating about 50 million UZS in revenue within 10 days.",
     ],
