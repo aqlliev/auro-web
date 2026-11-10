@@ -5,17 +5,15 @@
   --font-serif: var(--font-fraunces), Georgia, "Times New Roman", serif;
   --color-ink: #111111;
   --color-cream: #F3EEE3;
-  --color-paper: #EAE4D8;
-  --color-sand: #625E55;
-  --color-fog: #C8C1B4;
+  --color-paper: #EAE3D5;
+  --color-sand: #6A645A;
   --color-orange: #D9541E;
-  --color-line: rgba(17, 17, 17, 0.16);
+  --color-line: rgba(17, 17, 17, 0.12);
 }
 
 html {
   font-family: var(--font-sans);
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem;
   color-scheme: light;
 }
 
@@ -24,16 +22,12 @@ body {
   overflow-x: clip;
   background: #F3EEE3;
   color: #111111;
-}
-
-a,
-button {
-  cursor: pointer;
+  font-size: 1.0625rem;
+  line-height: 1.65;
 }
 
 h1,
-h2,
-h3 {
+h2 {
   text-wrap: balance;
 }
 
@@ -42,7 +36,7 @@ p {
 }
 
 ::selection {
-  background: #D9541E;
+  background: #111111;
   color: #F3EEE3;
 }
 
@@ -69,6 +63,26 @@ p {
 
 .signature {
   font-variation-settings: "SOFT" 38, "WONK" 1, "opsz" 144;
+}
+
+/* Underlined text link; orange appears only on hover. */
+.link {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em;
+  text-decoration-color: rgba(17, 17, 17, 0.3);
+  transition: text-decoration-color 0.2s;
+}
+
+.link:hover {
+  text-decoration-color: #D9541E;
+}
+
+/* Tighter crop on head and shoulders, and a light grade so the night blue sits closer to ink. */
+.portrait {
+  transform: scale(1.22);
+  transform-origin: 56% 36%;
+  filter: saturate(0.72) contrast(1.02);
 }
 
 @media (prefers-reduced-motion: reduce) {

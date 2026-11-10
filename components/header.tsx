@@ -1,5 +1,3 @@
-import { site } from "@/content/site";
-
 const links = [
   { href: "#background", label: "Background" },
   { href: "#learning", label: "Learning" },
@@ -8,24 +6,14 @@ const links = [
 
 export function Header() {
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-line bg-cream">
-      <div className="flex h-16 items-center justify-between gap-4 px-6 sm:px-8 lg:px-12 xl:px-16">
-        <a href="#top" className="font-serif text-lg tracking-tight text-ink">
-          {site.given}
-          <span className="hidden text-sand sm:inline"> {site.family}</span>
-        </a>
-        <nav className="flex items-center gap-5 sm:gap-7" aria-label="Sections">
-          {links.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className="text-sm tracking-wide text-sand transition-colors hover:text-ink"
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
-      </div>
+    <header className="px-6 sm:px-10">
+      <nav className="mx-auto flex h-20 max-w-5xl items-center justify-end gap-6 sm:gap-8" aria-label="Sections">
+        {links.map((link) => (
+          <a key={link.href} href={link.href} className="py-3 text-sm text-sand transition-colors hover:text-ink">
+            {link.label}
+          </a>
+        ))}
+      </nav>
     </header>
   );
 }

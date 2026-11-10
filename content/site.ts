@@ -9,9 +9,8 @@ export const site = {
   given: "Qodiriy",
   family: "Aqlliev",
   name: "Qodiriy Aqlliev",
-  eyebrow: "Seoul / MBA student, Big Data & AI",
   line: "I interned in overdue loan collection at a bank. Now I am learning to build the models that read credit risk.",
-  study: "MBA, Big Data & AI · Sejong University",
+  study: "MBA student, Big Data & AI · Sejong University, Seoul",
   lookingFor: "I am looking for a junior AI or data role, or an internship, in Seoul or remote.",
   email: "aqlliev@outlook.com",
   github: "https://github.com/aqlliev",
@@ -30,79 +29,50 @@ export const site = {
 } as const;
 
 export const background = {
-  heading: "From the bank floor to the model.",
   paragraphs: [
     "During an internship at Ipoteka Bank in Tashkent I worked on overdue loans, which showed me what a default looks like before it becomes a row in a dataset.",
     "That taught me to start from the person on the other side of the data. It is how I want to build AI: models that a bank, a manager, or a customer can actually use.",
   ],
 } as const;
 
-/** The jobs shown in full. Empty `dates` are hidden. */
+/** Work shown on the site, newest first. The CV has the full list. */
 export const experience = [
+  { id: "dominos", role: "Pizza Maker Assistant", org: "Domino’s Pizza, Tashkent", dates: "Jun – Aug 2025", note: "" },
   {
-    id: "ipoteka",
-    role: "Intern, Overdue Collection Department",
-    org: "Ipoteka Bank",
-    place: "Tashkent",
-    dates: "May – Jul 2023",
-    points: [
-      "Tracked overdue loan accounts and helped prioritise them by risk and amount.",
-      "Contacted borrowers about repayment plans and recorded the outcomes.",
-    ],
+    id: "bellissimo",
+    role: "Pizza Maker, then Assistant to the Shift Manager",
+    org: "Bellissimo Pizza, Tashkent",
+    dates: "Feb – Jun 2025",
+    note: "",
   },
+  { id: "rever", role: "Receptionist", org: "Rever Hotel, Tashkent", dates: "Nov – Dec 2024", note: "" },
   {
     id: "uzschool",
     role: "Sales Manager",
-    org: "Uzschool",
-    place: "Tashkent",
+    org: "Uzschool, Tashkent",
     dates: "Mar – May 2024",
-    points: [
-      "Sold online English courses, generating about 50 million UZS in revenue within 10 days.",
-    ],
+    note: "Sold online English courses, generating about 50 million UZS in revenue within 10 days.",
   },
-] as const;
-
-/** Other jobs, one line each, newest first. The full list is in the CV. */
-export const otherWork = [
-  { id: "dominos", role: "Pizza Maker Assistant", org: "Domino’s Pizza", dates: "Jun – Aug 2025" },
-  { id: "bellissimo", role: "Pizza Maker, then Assistant to the Shift Manager", org: "Bellissimo Pizza", dates: "Feb – Jun 2025" },
-  { id: "river", role: "Receptionist", org: "Rever Hotel", dates: "Nov – Dec 2024" },
+  {
+    id: "ipoteka",
+    role: "Intern, Overdue Collection Department",
+    org: "Ipoteka Bank, Tashkent",
+    dates: "May – Jul 2023",
+    note: "Tracked overdue loan accounts, helped prioritise them by risk and amount, and contacted borrowers about repayment plans.",
+  },
 ] as const;
 
 export const education = [
-  {
-    id: "mba",
-    level: "MBA · Sep 2025 – Aug 2027 (expected)",
-    program: "Big Data & AI",
-    school: "Sejong University, Seoul",
-  },
+  { id: "mba", program: "MBA, Big Data & AI", school: "Sejong University, Seoul", dates: "Sep 2025 – Aug 2027 (expected)" },
   {
     id: "bachelor",
-    level: "Bachelor · graduated Jun 2025",
-    program: "Economic Security",
+    program: "Bachelor, Economic Security",
     school: "Tashkent State University of Economics",
+    dates: "graduated Jun 2025",
   },
 ] as const;
 
-export const learning = {
-  heading: "What I am learning now.",
-  intro:
-    "I do not have finished AI projects to show yet. This is where I am today, stated plainly.",
-  rows: [
-    {
-      label: "Tools so far",
-      value: "Python, SQL, Excel",
-      meta: "Excel at the level of formulas and pivot tables.",
-    },
-    {
-      label: "In the MBA",
-      value: "Data analysis for decisions",
-      meta: "Structured and unstructured data, case work, and carrying a result into a management decision.",
-    },
-    {
-      label: "Next",
-      value: "A first project in public",
-      meta: "It goes on GitHub, and on this page, when it is finished.",
-    },
-  ],
-} as const;
+export const learning = [
+  "I do not have finished AI projects to show yet.",
+  "So far I have worked with Python, SQL and Excel (formulas and pivot tables). The MBA covers structured and unstructured data, case work, and carrying a result into a management decision.",
+] as const;

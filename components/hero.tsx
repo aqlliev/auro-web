@@ -3,45 +3,35 @@ import { site } from "@/content/site";
 
 export function Hero() {
   return (
-    <section id="top" className="border-b border-line px-6 pt-28 pb-20 sm:px-8 lg:px-12 lg:pt-36 lg:pb-28 xl:px-16">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
-        <div>
-          <p className="mb-8 flex items-center gap-3 text-xs font-medium tracking-[0.18em] text-sand uppercase">
-            <span className="size-2 rounded-full bg-orange" aria-hidden />
-            {site.eyebrow}
-          </p>
-          <h1 className="signature font-serif text-[clamp(4.2rem,8.6vw,8rem)] leading-[0.88] tracking-[-0.05em] text-ink">
+    <section id="top" className="px-6 sm:px-10">
+      <div className="mx-auto grid max-w-5xl items-start gap-12 pt-8 pb-16 md:grid-cols-12 md:gap-8 md:pt-14 md:pb-24">
+        <div className="md:col-span-7">
+          <h1 className="signature font-serif text-[clamp(3.75rem,9vw,7rem)] leading-[0.9] tracking-[-0.045em]">
             {site.given}
             <br />
-            <span className="font-light text-orange italic">{site.family}.</span>
+            <span className="font-light text-orange italic">{site.family}</span>
           </h1>
-          <p className="mt-9 max-w-[29ch] text-xl leading-relaxed text-ink sm:text-2xl">{site.line}</p>
-          <p className="mt-4 max-w-sm text-base text-sand">{site.study}</p>
-          <div className="mt-9 flex flex-wrap items-center gap-5">
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-3 rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition-colors hover:bg-orange"
-            >
-              Get in touch <span aria-hidden>↗</span>
-            </a>
-            <a href="#background" className="border-b border-ink pb-1 text-sm font-medium text-ink">
-              My background <span aria-hidden>↓</span>
-            </a>
-          </div>
+          <p className="mt-10 max-w-[28ch] text-2xl leading-snug">{site.line}</p>
+          <p className="mt-4 text-sm text-sand">{site.study}</p>
+          <a
+            href="#contact"
+            className="mt-9 inline-block rounded-full bg-ink px-6 py-3 text-sm font-medium text-cream transition-opacity hover:opacity-80"
+          >
+            Get in touch
+          </a>
         </div>
-        <figure className="relative mx-auto w-full max-w-[420px] lg:mx-0">
-          <div className="absolute top-0 left-0 aspect-[4/5] w-full translate-x-3 translate-y-3 rounded-t-[46%] bg-orange" aria-hidden />
-          <div className="relative aspect-[4/5] overflow-hidden rounded-t-[46%] border border-ink bg-ink">
+        <div className="md:col-span-4 md:col-start-9 md:pt-4">
+          <div className="relative aspect-[4/5] w-full max-w-[380px] overflow-hidden rounded-sm bg-paper">
             <Image
               src={site.portrait}
               alt={site.portraitAlt}
               fill
               priority
-              sizes="(min-width: 1024px) 420px, 90vw"
-              className="object-cover object-[64%_20%]"
+              sizes="(min-width: 768px) 380px, 90vw"
+              className="portrait object-cover"
             />
           </div>
-        </figure>
+        </div>
       </div>
     </section>
   );

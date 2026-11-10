@@ -23,8 +23,8 @@ To show LinkedIn, set `site.linkedin` to the profile URL. The CV download is `pu
 
 ## Features
 
-- One page: hero, background, learning, contact
-- Copy-email button and mailto/social links
+- One page: intro, background, work, education, learning, contact
+- Mail, CV and social links; no client-side script
 - Keyboard focus styles, a skip link and reduced-motion support
 - Social preview image and structured metadata
 
