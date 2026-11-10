@@ -28,7 +28,7 @@ function siteUrl() {
 }
 
 const description =
-  "Qodiriy Aqlliev, junior AI engineer. MBA in Big Data & AI at Sejong University, with a background in credit risk at Ipoteka Bank.";
+  "Qodiriy Aqlliev. MBA student in Big Data & AI at Sejong University, Seoul, with a background in overdue loan collection at Ipoteka Bank.";
 
 export const viewport: Viewport = {
   themeColor: "#F3EEE3",
@@ -38,21 +38,21 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: {
-    default: "Qodiriy Aqlliev - Junior AI Engineer",
+    default: "Qodiriy Aqlliev - From credit risk to AI",
     template: "%s · Qodiriy Aqlliev",
   },
   description,
   authors: [{ name: site.name, url: site.github }],
   openGraph: {
-    title: "Qodiriy Aqlliev - Junior AI Engineer",
-    description: "MBA, Big Data & AI at Sejong University. Credit risk at a bank, now AI.",
+    title: "Qodiriy Aqlliev - From credit risk to AI",
+    description: "MBA student in Big Data & AI at Sejong University. Credit risk at a bank, now learning AI.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     creator: "@aqlliev",
-    title: "Qodiriy Aqlliev - Junior AI Engineer",
+    title: "Qodiriy Aqlliev - From credit risk to AI",
     description: "MBA, Big Data & AI at Sejong University.",
   },
 };
@@ -75,8 +75,7 @@ const jsonLd = {
     "@type": "CollegeOrUniversity",
     name: "Tashkent State University of Economics",
   },
-  jobTitle: "Junior AI Engineer",
-  sameAs: [site.github, site.x, site.telegram],
+  sameAs: [site.github, site.x, site.telegram, site.linkedin].filter(Boolean),
 };
 
 export default function RootLayout({
@@ -94,7 +93,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <div className="grain" aria-hidden />
         {children}
       </body>
     </html>

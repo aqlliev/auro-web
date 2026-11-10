@@ -1,6 +1,6 @@
 # Qodiriy Aqlliev
 
-Personal website built with Next.js 15, React 19, Tailwind CSS 4 and Framer Motion.
+Personal website built with Next.js 15, React 19 and Tailwind CSS 4. No other runtime dependencies.
 
 ## Design
 
@@ -17,13 +17,14 @@ Use the localhost address printed by Next.js. Run `npm run build` to check the p
 
 ## Content
 
-Edit `content/site.ts` for biography, education, experience, skills, project notes and contact links. The portrait is `public/portrait.jpg`.
+Edit `content/site.ts` for the hero line, background, work history, education, the learning block and contact links. The portrait is `public/portrait.jpg`.
+
+To show LinkedIn, set `site.linkedin` to the profile URL. To show a CV link, add `public/cv.pdf` and set `site.cv` to `"/cv.pdf"`. Empty values are hidden.
 
 ## Features
 
-- Filterable skills and expandable project notes
-- Copy-email and mailto/social links
-- Mobile navigation, section highlighting and a Seoul clock
+- One page: hero, background, learning, contact
+- Copy-email button and mailto/social links
 - Keyboard focus styles, a skip link and reduced-motion support
 - Social preview image and structured metadata
 

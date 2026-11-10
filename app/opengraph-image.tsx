@@ -45,7 +45,7 @@ export default async function OpenGraphImage() {
           <div style={{ fontSize: 78, lineHeight: 0.9, fontStyle: "italic", color: "#D9541E" }}>Aqlliev</div>
           <div style={{ fontSize: 28, marginTop: 32, color: "#D9541E" }}>MBA, Big Data & AI</div>
           <div style={{ fontSize: 26, marginTop: 10, color: "#111111" }}>
-            Economic security, read through data.
+            From credit risk to AI.
           </div>
         </div>
         <div style={{ display: "flex", width: 560, height: 630, position: "relative" }}>
