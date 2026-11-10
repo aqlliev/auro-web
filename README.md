@@ -19,7 +19,7 @@ Use the localhost address printed by Next.js. Run `npm run build` to check the p
 
 Edit `content/site.ts` for the hero line, background, work history, education, the learning block and contact links. The portrait is `public/portrait.jpg`.
 
-To show LinkedIn, set `site.linkedin` to the profile URL. To show a CV link, add `public/cv.pdf` and set `site.cv` to `"/cv.pdf"`. Empty values are hidden.
+To show LinkedIn, set `site.linkedin` to the profile URL. The CV download is `public/cv.pdf`. Its source is `cv/cv.html`: edit it, open it in Chrome and print to PDF (A4) over `public/cv.pdf`. Empty `linkedin` or `cv` values are hidden.
 
 ## Features
 

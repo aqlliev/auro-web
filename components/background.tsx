@@ -1,4 +1,4 @@
-import { background, education, experience } from "@/content/site";
+import { background, education, experience, otherWork } from "@/content/site";
 
 const label = "text-[0.72rem] font-medium tracking-[0.18em] text-sand uppercase";
 
@@ -34,6 +34,16 @@ export function Background() {
                 </li>
               ))}
             </ol>
+            <ul className="mt-8 max-w-xl divide-y divide-line border-y border-line text-sm">
+              {otherWork.map((job) => (
+                <li key={job.id} className="flex flex-wrap justify-between gap-x-6 gap-y-1 py-3">
+                  <span className="text-ink/90">
+                    {job.role}, {job.org}
+                  </span>
+                  <span className="text-sand tabular-nums">{job.dates}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className="lg:col-span-4 lg:col-start-9">

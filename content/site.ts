@@ -10,7 +10,7 @@ export const site = {
   family: "Aqlliev",
   name: "Qodiriy Aqlliev",
   eyebrow: "Seoul / MBA student, Big Data & AI",
-  line: "I worked with credit risk at a bank. Now I am learning to build the models that read it.",
+  line: "I interned in overdue loan collection at a bank. Now I am learning to build the models that read credit risk.",
   study: "MBA, Big Data & AI · Sejong University",
   lookingFor: "I am looking for a junior AI or data role, or an internship, in Seoul or remote.",
   email: "aqlliev@outlook.com",
@@ -23,7 +23,7 @@ export const site = {
   /** Paste the full LinkedIn URL. Empty = not shown. */
   linkedin: "https://www.linkedin.com/in/aqlliev",
   /** Put the PDF in /public and set this to "/cv.pdf". Empty = not shown. */
-  cv: "",
+  cv: "/cv.pdf",
   portrait: "/portrait.jpg",
   portraitAlt:
     "Qodiriy Aqlliev in a black leather jacket, looking back at the camera on a beach at night, with a dark sky and white surf behind him.",
@@ -32,52 +32,54 @@ export const site = {
 export const background = {
   heading: "From the bank floor to the model.",
   paragraphs: [
-    "At Ipoteka Bank in Tashkent I handled overdue loans, which showed me what a default looks like before it becomes a row in a dataset.",
+    "During an internship at Ipoteka Bank in Tashkent I worked on overdue loans, which showed me what a default looks like before it becomes a row in a dataset.",
     "That taught me to start from the person on the other side of the data. It is how I want to build AI: models that a bank, a manager, or a customer can actually use.",
   ],
 } as const;
 
-/** Work history, newest first. Add `dates` (e.g. "2023 – 2024") when you have them. */
+/** The jobs shown in full. Empty `dates` are hidden. */
 export const experience = [
   {
     id: "ipoteka",
-    role: "Overdue Collection Department",
+    role: "Intern, Overdue Collection Department",
     org: "Ipoteka Bank",
     place: "Tashkent",
-    dates: "",
+    dates: "May – Jul 2023",
     points: [
-      "Worked a portfolio of overdue loans: tracked delinquent accounts and prioritised them by risk and amount.",
-      "Contacted borrowers to agree on repayment plans, and recorded every outcome.",
+      "Tracked overdue loan accounts and helped prioritise them by risk and amount.",
+      "Contacted borrowers about repayment plans and recorded the outcomes.",
     ],
   },
   {
-    id: "river",
-    role: "Receptionist",
-    org: "River Hotel",
+    id: "uzschool",
+    role: "Sales Manager",
+    org: "Uzschool",
     place: "Tashkent",
     dates: "",
-    points: ["Handled check-ins, bookings and guest requests, often across languages."],
+    points: [
+      "Sold online English courses, generating about 50 million UZS in revenue within 10 days.",
+    ],
   },
-  {
-    id: "pizzeria",
-    role: "Shift Manager",
-    org: "Pizzeria",
-    place: "Tashkent",
-    dates: "",
-    points: ["Ran shifts end to end: staff, rush-hour orders, cash and closing."],
-  },
+] as const;
+
+/** Other jobs, one line each, newest first. The full list is in the CV. */
+export const otherWork = [
+  { id: "dominos", role: "Pizza Maker Assistant", org: "Domino’s Pizza", dates: "Jun – Aug 2025" },
+  { id: "bellissimo", role: "Pizza Maker, then Assistant to the Shift Manager", org: "Bellissimo Pizza", dates: "Feb – Jun 2025" },
+  { id: "river", role: "Receptionist", org: "River Hotel", dates: "Nov – Dec 2024" },
+  { id: "alisher", role: "Receptionist", org: "Alisher Hotel", dates: "" },
 ] as const;
 
 export const education = [
   {
     id: "mba",
-    level: "MBA, in progress",
+    level: "MBA · Sep 2025 – Aug 2027 (expected)",
     program: "Big Data & AI",
     school: "Sejong University, Seoul",
   },
   {
     id: "bachelor",
-    level: "Bachelor",
+    level: "Bachelor · graduated Jun 2025",
     program: "Economic Security",
     school: "Tashkent State University of Economics",
   },

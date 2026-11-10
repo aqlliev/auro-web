@@ -28,7 +28,7 @@ function siteUrl() {
 }
 
 const description =
-  "Qodiriy Aqlliev. MBA student in Big Data & AI at Sejong University, Seoul, with a background in overdue loan collection at Ipoteka Bank.";
+  "Qodiriy Aqlliev. MBA student in Big Data & AI at Sejong University, Seoul, with a bank internship in overdue loan collection.";
 
 export const viewport: Viewport = {
   themeColor: "#F3EEE3",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   authors: [{ name: site.name, url: site.github }],
   openGraph: {
     title: "Qodiriy Aqlliev - From credit risk to AI",
-    description: "MBA student in Big Data & AI at Sejong University. Credit risk at a bank, now learning AI.",
+    description: "MBA student in Big Data & AI at Sejong University. A bank internship in loan collection, now learning AI.",
     type: "website",
     locale: "en_US",
   },
