@@ -4,7 +4,7 @@ import { Section } from "@/components/section";
 export function Background() {
   return (
     <>
-      <Section id="background" title="Background">
+      <Section id="background" title="Background" divider={false}>
         <div className="space-y-5">
           {background.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>

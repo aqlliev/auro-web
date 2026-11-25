@@ -78,13 +78,6 @@ p {
   text-decoration-color: #D9541E;
 }
 
-/* Tighter crop on head and shoulders, and a light grade so the night blue sits closer to ink. */
-.portrait {
-  transform: scale(1.22);
-  transform-origin: 56% 36%;
-  filter: saturate(0.72) contrast(1.02);
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
